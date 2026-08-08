@@ -1,3 +1,6 @@
-transformers>=4.40.0
-torch>=2.2.0
-nltk>=3.8.1
+streamlit
+pandas
+lxml
+scikit-learn
+numpy
+nltk
