@@ -1,116 +1,44 @@
-# 🩺 Medical Chatbot with Sentiment Analysis
+# Medical Q&A Chatbot using MedQuAD
 
-## 📌 Project Overview
-
-This project is a Medical Chatbot integrated with Sentiment Analysis using Natural Language Processing (NLP).
-
-The chatbot detects the user's emotional sentiment before generating a response.
-
-Supported sentiments:
-
-- 😊 Positive
-- 😐 Neutral
-- 😔 Negative
-
-The chatbot changes its response tone according to the detected sentiment while providing medical guidance from a simple medical knowledge base.
-
----
+A Python-based medical question-answering chatbot built using the MedQuAD dataset. The system retrieves relevant medical answers using TF-IDF and cosine similarity and provides basic medical entity recognition and sentiment analysis through a Streamlit interface.
 
 ## Features
 
-- Sentiment Detection
-- Medical Question Answering
-- Emotion-aware Responses
-- Confidence Score Display
-- Simple Command Line Interface
-- Modular Python Design
-
----
+- Medical question-answering using the MedQuAD dataset
+- TF-IDF based information retrieval
+- Cosine similarity for finding relevant questions
+- Basic medical entity recognition
+- Sentiment analysis of user questions
+- Interactive Streamlit user interface
+- Medical safety disclaimer
 
 ## Technologies Used
 
 - Python
-- Hugging Face Transformers
-- PyTorch
+- Streamlit
+- Scikit-learn
+- Pandas
+- NumPy
 - NLTK
-
----
+- XML
+- MedQuAD Dataset
 
 ## Project Structure
 
-```
-Medical-Chatbot-Sentiment-Analysis/
-
+```text
+Medical-QA-Chatbot/
+│
 ├── app.py
-├── chatbot_with_sentiment.py
+├── retriever.py
+├── entity_recognition.py
 ├── sentiment_analyzer.py
-├── evaluate_sentiment.py
 ├── requirements.txt
 ├── README.md
-├── LICENSE
-└── .gitignore
-```
-
----
-
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Run the Chatbot
-
-```bash
-python app.py
-```
-
----
-
-## Run Evaluation
-
-```bash
-python evaluate_sentiment.py
-```
-
----
-
-## Example
-
-User:
-
-```
-I have had a fever for two days.
-```
-
-Detected Sentiment:
-
-```
-Neutral
-```
-
-Bot:
-
-```
-Thank you for your question.
-
-A fever is usually caused by an infection...
-```
-
----
-
-## Future Improvements
-
-- Voice Support
-- GUI using Streamlit
-- Medical Dataset Integration
-- Conversation History
-- Doctor Recommendation
-
----
-
-## Author
-
-Created as part of an Internship Project on Sentiment Analysis Integration using Python and NLP.
+│
+└── Data/
+    └── MedQuAD/
+        ├── 1_CancerGov_QA/
+        ├── 2_GARD_QA/
+        ├── 3_GHR_QA/
+        ├── ...
+        └── 12_MPlusHerbsSupplements_QA/
