@@ -1,6 +1,10 @@
 streamlit
 pandas
-lxml
-scikit-learn
 numpy
-nltk
+scikit-learn
+sentence-transformers
+transformers
+torch
+requests
+beautifulsoup4
+plotly

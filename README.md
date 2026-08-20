@@ -1,44 +1,33 @@
-# Medical Q&A Chatbot using MedQuAD
+# 🔬 ArXiv Research Assistant
 
-A Python-based medical question-answering chatbot built using the MedQuAD dataset. The system retrieves relevant medical answers using TF-IDF and cosine similarity and provides basic medical entity recognition and sentiment analysis through a Streamlit interface.
+An AI-powered research chatbot designed to help users explore and understand Computer Science research papers from the arXiv dataset.
 
-## Features
+The application allows users to search research papers using semantic search, generate AI-powered summaries, ask questions about complex Computer Science concepts, continue with follow-up questions, visualize research categories, and extract frequently occurring technical terms.
 
-- Medical question-answering using the MedQuAD dataset
-- TF-IDF based information retrieval
-- Cosine similarity for finding relevant questions
-- Basic medical entity recognition
-- Sentiment analysis of user questions
-- Interactive Streamlit user interface
-- Medical safety disclaimer
+---
 
-## Technologies Used
+## 🚀 Features
 
-- Python
-- Streamlit
-- Scikit-learn
-- Pandas
-- NumPy
-- NLTK
-- XML
-- MedQuAD Dataset
+### 🔎 Semantic Paper Search
+Searches relevant Computer Science research papers based on the meaning of the user's query rather than simple keyword matching.
 
-## Project Structure
+### 📚 Research Paper Retrieval
+Retrieves the most relevant papers from a Computer Science subset of the arXiv dataset.
+
+Each result includes:
+
+- Paper title
+- Research category
+- Similarity score
+- Abstract
+
+### 📝 AI-Powered Summarization
+Generates concise summaries of research paper abstracts using an open-source NLP model.
+
+### 🧠 Concept Explanation
+Allows users to ask questions about complex Computer Science concepts and receive simplified explanations.
+
+Example:
 
 ```text
-Medical-QA-Chatbot/
-│
-├── app.py
-├── retriever.py
-├── entity_recognition.py
-├── sentiment_analyzer.py
-├── requirements.txt
-├── README.md
-│
-└── Data/
-    └── MedQuAD/
-        ├── 1_CancerGov_QA/
-        ├── 2_GARD_QA/
-        ├── 3_GHR_QA/
-        ├── ...
-        └── 12_MPlusHerbsSupplements_QA/
+What is a neural network?
